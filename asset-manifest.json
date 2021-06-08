@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NBA-Players/static/css/main.1eafb86a.chunk.css",
+    "main.js": "/NBA-Players/static/js/main.f4493208.chunk.js",
+    "main.js.map": "/NBA-Players/static/js/main.f4493208.chunk.js.map",
+    "runtime-main.js": "/NBA-Players/static/js/runtime-main.de1f9dd7.js",
+    "runtime-main.js.map": "/NBA-Players/static/js/runtime-main.de1f9dd7.js.map",
+    "static/js/2.e6b0b57b.chunk.js": "/NBA-Players/static/js/2.e6b0b57b.chunk.js",
+    "static/js/2.e6b0b57b.chunk.js.map": "/NBA-Players/static/js/2.e6b0b57b.chunk.js.map",
+    "index.html": "/NBA-Players/index.html",
+    "static/css/main.1eafb86a.chunk.css.map": "/NBA-Players/static/css/main.1eafb86a.chunk.css.map",
+    "static/js/2.e6b0b57b.chunk.js.LICENSE.txt": "/NBA-Players/static/js/2.e6b0b57b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de1f9dd7.js",
+    "static/js/2.e6b0b57b.chunk.js",
+    "static/css/main.1eafb86a.chunk.css",
+    "static/js/main.f4493208.chunk.js"
+  ]
+}
