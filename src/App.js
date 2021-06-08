@@ -15,7 +15,7 @@ class App extends Component {
     //Bind - For a given function, creates a bound function that has the same body as the original function.
     this.handleChange = this.handleChange.bind(this)
   }
-  //fetch the api to retrieve monsters
+//fetch the api to retrieve monsters
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   handleChange(e) {
-    this.setState({ searchField: e.target.value });
+    this.setState({ searchField: e.target.value});
   }
 
   render() {
@@ -36,8 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1> Monsters-Roledex</h1>
-        <SearchBox placeholder='search monsters'
-          handleChange={this.handleChange} />
+        <SearchBox placeholder='Buscar monstros' handleChange={this.handleChange} />
         <CardList monsters={filter_monsters} />
       </div>
     );
