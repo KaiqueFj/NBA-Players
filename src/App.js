@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
+import { SearchBox } from './components/search-box/search_box.component';
 import './App.css';
 
 class App extends Component {
@@ -11,12 +12,18 @@ class App extends Component {
       monsters: [],
       searchField: ''
     };
+    //Bind - For a given function, creates a bound function that has the same body as the original function.
+    this.handleChange = this.handleChange.bind(this)
   }
-
+//fetch the api to retrieve monsters
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }));
+  }
+
+  handleChange(e) {
+    this.setState({ searchField: e.target.value});
   }
 
   render() {
@@ -28,18 +35,13 @@ class App extends Component {
     )
     return (
       <div className="App">
-        <input type='search'
-          placeholder='search for players'
-          onChange={e => this.setState({ searchField: e.target.value })}
-        />
-
-
+        <h1> Monsters-Roledex</h1>
+        <SearchBox  handleChange={this.handleChange} />
         <CardList monsters={filter_monsters} />
-
       </div>
     );
   }
 }
 
-
+//this represents the context that it´s involved 
 export default App;
